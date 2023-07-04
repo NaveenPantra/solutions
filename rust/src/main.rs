@@ -1,3 +1,7 @@
+mod _000_contains_duplicates;
+
+use _000_contains_duplicates::contains_duplicates_caller;
+
 fn main() {
-    println!("Hello, world!");
+    contains_duplicates_caller()
 }
