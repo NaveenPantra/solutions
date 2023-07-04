@@ -30,7 +30,7 @@ fn contains_duplicates_v2(arr: Vec<i32>) -> bool {
     }
     let mut seen_map: HashMap<i32, bool> = HashMap::new();
     for num in &arr {
-        if let Some(a) = seen_map.get(num) {
+        if let Some(_) = seen_map.get(num) {
             return true;
         }
         seen_map.insert(*num, true);
