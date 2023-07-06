@@ -16,3 +16,4 @@ Cargo.lock
 # MISC
 .idea
 .code
+.vscode
