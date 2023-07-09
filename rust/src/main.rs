@@ -8,6 +8,7 @@ mod _006_find_pair_sum;
 mod _007_largest_common_prefix_in_strings;
 mod _008_grouped_anagrams;
 mod _009_pascals_triangle;
+mod _010_remove_element;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -19,6 +20,7 @@ use _006_find_pair_sum::find_pair_sum_caller;
 use _007_largest_common_prefix_in_strings::largest_common_prefix_in_strings_caller;
 use _008_grouped_anagrams::group_anagrams_caller;
 use _009_pascals_triangle::get_pascal_triangle_caller;
+use _010_remove_element::remove_element_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -31,4 +33,5 @@ fn main() {
     largest_common_prefix_in_strings_caller();
     group_anagrams_caller();
     get_pascal_triangle_caller();
+    remove_element_caller();
 }
