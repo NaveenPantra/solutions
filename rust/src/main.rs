@@ -14,6 +14,7 @@ mod _012_isomorphic_strings;
 mod _013_can_place_flowers;
 mod _014_majority_element;
 mod _015_next_greater_element;
+mod _016_pivot_index;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -31,6 +32,7 @@ use _012_isomorphic_strings::isomorphic_strings_caller;
 use _013_can_place_flowers::can_place_flowers_caller;
 use _014_majority_element::majority_element_caller;
 use _015_next_greater_element::next_greater_element_caller;
+use _016_pivot_index::find_pivot_index_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -49,4 +51,5 @@ fn main() {
     can_place_flowers_caller();
     majority_element_caller();
     next_greater_element_caller();
+    find_pivot_index_caller();
 }
