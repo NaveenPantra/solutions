@@ -9,6 +9,7 @@ mod _007_largest_common_prefix_in_strings;
 mod _008_grouped_anagrams;
 mod _009_pascals_triangle;
 mod _010_remove_element;
+mod _011_unique_email_addresses;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -21,6 +22,7 @@ use _007_largest_common_prefix_in_strings::largest_common_prefix_in_strings_call
 use _008_grouped_anagrams::group_anagrams_caller;
 use _009_pascals_triangle::get_pascal_triangle_caller;
 use _010_remove_element::remove_element_caller;
+use _011_unique_email_addresses::unique_email_addresses_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -34,4 +36,5 @@ fn main() {
     group_anagrams_caller();
     get_pascal_triangle_caller();
     remove_element_caller();
+    unique_email_addresses_caller();
 }
