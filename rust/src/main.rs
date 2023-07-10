@@ -10,6 +10,8 @@ mod _008_grouped_anagrams;
 mod _009_pascals_triangle;
 mod _010_remove_element;
 mod _011_unique_email_addresses;
+mod _012_isomorphic_strings;
+mod _013_can_place_flowers;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -23,6 +25,8 @@ use _008_grouped_anagrams::group_anagrams_caller;
 use _009_pascals_triangle::get_pascal_triangle_caller;
 use _010_remove_element::remove_element_caller;
 use _011_unique_email_addresses::unique_email_addresses_caller;
+use _012_isomorphic_strings::isomorphic_strings_caller;
+use _013_can_place_flowers::can_place_flowers_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -37,4 +41,6 @@ fn main() {
     get_pascal_triangle_caller();
     remove_element_caller();
     unique_email_addresses_caller();
+    isomorphic_strings_caller();
+    can_place_flowers_caller();
 }
