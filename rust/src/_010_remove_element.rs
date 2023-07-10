@@ -11,16 +11,25 @@ pub fn remove_element_caller() {
 }
 
 fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-    let mut counter: i32 = 0;
-    for num in nums.iter_mut() {
-        if *num == val {
-            counter += 1;
-            *num = f32::INFINITY as i32;
-        }
+    if nums.len() == 0 {
+        return 0;
     }
-    nums.sort();
-    for _ in 0..counter {
-        nums.pop();
+    let mut counter: i32 = 0;
+    let mut start: usize = 0;
+    let mut last: usize = nums.len() - 1;
+    while start <= last {
+        if nums[start] == val {
+            let temp = nums[start];
+            nums[start] = nums[last];
+            nums[last] = temp;
+            if last == 0 {
+                return counter;
+            }
+            last -= 1;
+            continue;
+        }
+        counter += 1;
+        start += 1;
     }
     counter
 }
