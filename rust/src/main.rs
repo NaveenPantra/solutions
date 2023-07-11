@@ -17,6 +17,7 @@ mod _015_next_greater_element;
 mod _016_pivot_index;
 mod _017_range_sum_query_imm;
 mod _018_find_disappeared_numbers;
+mod _019_maximum_balloons;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -37,6 +38,7 @@ use _015_next_greater_element::next_greater_element_caller;
 use _016_pivot_index::find_pivot_index_caller;
 use _017_range_sum_query_imm::range_sum_query_immutable_caller;
 use _018_find_disappeared_numbers::find_disappeared_numbers_caller;
+use _019_maximum_balloons::maximum_balloons_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -58,4 +60,5 @@ fn main() {
     find_pivot_index_caller();
     range_sum_query_immutable_caller();
     find_disappeared_numbers_caller();
+    maximum_balloons_caller();
 }
