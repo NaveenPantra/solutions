@@ -55,7 +55,6 @@ fn main() {
     get_pascal_triangle_caller();
     remove_element_caller();
     unique_email_addresses_caller();
-    isomorphic_strings_caller();
     can_place_flowers_caller();
     majority_element_caller();
     next_greater_element_caller();
@@ -64,4 +63,5 @@ fn main() {
     find_disappeared_numbers_caller();
     maximum_balloons_caller();
     word_pattern_caller();
+    isomorphic_strings_caller();
 }
