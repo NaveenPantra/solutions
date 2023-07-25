@@ -19,6 +19,7 @@ mod _017_range_sum_query_imm;
 mod _018_find_disappeared_numbers;
 mod _019_maximum_balloons;
 mod _020_word_pattern;
+mod _021_hash_set;
 
 use _000_contains_duplicates::contains_duplicates_caller;
 use _001_valid_anagram::valid_anagram_caller;
@@ -41,6 +42,7 @@ use _017_range_sum_query_imm::range_sum_query_immutable_caller;
 use _018_find_disappeared_numbers::find_disappeared_numbers_caller;
 use _019_maximum_balloons::maximum_balloons_caller;
 use _020_word_pattern::word_pattern_caller;
+use _021_hash_set::hash_set_caller;
 
 fn main() {
     contains_duplicates_caller();
@@ -64,4 +66,5 @@ fn main() {
     maximum_balloons_caller();
     word_pattern_caller();
     isomorphic_strings_caller();
+    hash_set_caller();
 }
