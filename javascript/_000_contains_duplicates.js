@@ -37,3 +37,7 @@ function containsDuplicateV2(nums) {
 }
 
 export default containsDuplicatesCaller
+export {
+    containsDuplicateV1,
+    containsDuplicateV2,
+}
