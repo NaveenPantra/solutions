@@ -28,6 +28,4 @@ test('minSubArrayLength', () => {
     arr = [1, 4, 16, 22, 5, 7, 8, 9, 10]
     targetSum = 95
     expect(minSubArrayLength(arr, targetSum)).toEqual(0)
-
-
 })

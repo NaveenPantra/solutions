@@ -1,21 +1,9 @@
 function minSubArrayLength(arr = [], targetSum = 0) {
     let start = 0;
     let end = 0;
-    let minSubArrayRange = [0, 0];
-    let sum = 0;
-    while (sum < targetSum && end < arr.length) {
-        sum += arr[end];
-        end += 1;
-    }
+    let minSubArrayRange = Infinity;
 
-    if (sum >= targetSum) {
-        minSubArrayRange = [start, end];
-    } else {
-        return 0;
-    }
-
-    let countingSum = sum - arr[start];
-    start += 1;
+    let countingSum = 0;
     while (end < arr.length) {
         if (countingSum < targetSum) {
             countingSum += arr[end]
@@ -23,15 +11,15 @@ function minSubArrayLength(arr = [], targetSum = 0) {
         }
         while (countingSum >= targetSum && start < end) {
             const currentRange = end - start;
-            if (currentRange < (minSubArrayRange[1] - minSubArrayRange[0])) {
-                minSubArrayRange = [start, end];
+            if (currentRange < minSubArrayRange) {
+                minSubArrayRange = currentRange;
             }
             countingSum -= arr[start]
             start += 1
         }
     }
 
-    return minSubArrayRange[1] - minSubArrayRange[0]
+    return minSubArrayRange === Infinity ? 0 : minSubArrayRange;
 }
 
 export {minSubArrayLength}
