@@ -11,5 +11,8 @@
   "type": "module",
   "devDependencies": {
     "jest": "^29.6.4"
+  },
+  "jest": {
+    "verbose": true
   }
 }
