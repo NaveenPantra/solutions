@@ -20,6 +20,3 @@ function permutations(str = '') {
 }
 
 export { permutations }
-
-let str = 'abc'
-console.log(permutations(str))
