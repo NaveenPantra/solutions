@@ -2,6 +2,7 @@ import { bubbleSort } from "../../practice/sorting/_000_bubbleSort.js";
 import { selectionSort } from "../../practice/sorting/_001_selectionSort.js";
 import { insertionSort } from "../../practice/sorting/_003_insertionSort.js";
 import { mergeSort } from "../../practice/sorting/_004_mergeSort.js";
+import { quickSort } from "../../practice/sorting/_005_quicksort.js";
 
 const testEntries = [
     {
@@ -52,5 +53,11 @@ test('insertionSort', () => {
 test('mergeSort', () => {
     global.structuredClone(testEntries).forEach(testEntry => {
         expect(mergeSort(testEntry.arr, 0, testEntry.arr.length - 1)).toEqual(testEntry.res)
+    })
+})
+
+test('quickSort', () => {
+    global.structuredClone(testEntries).forEach(testEntry => {
+        expect(quickSort(testEntry.arr, 0, testEntry.arr.length - 1)).toEqual(testEntry.res)
     })
 })
